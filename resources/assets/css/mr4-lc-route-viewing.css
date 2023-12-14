@@ -1,0 +1,20 @@
+.route-viewing-popup {
+  display: grid;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background-color: #000000dd;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.route-viewing-message {
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #ffffff;
+  text-align: center;
+  place-self: center;
+  overflow: hidden;
+}

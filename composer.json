@@ -1,0 +1,34 @@
+{
+    "name": "mr4-lc/route-viewing",
+    "description": "Laravel route viewing",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "route-viewing"],
+    "version": "0.0.1",
+    "homepage": "https://github.com/han48/mr4-lc.route-viewing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mr4",
+            "email": "zzz4everzzz@live.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "cboden/ratchet": "^0.4.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mr4Lc\\RouteViewing\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mr4Lc\\RouteViewing\\RouteViewingServiceProvider"
+            ]
+        }
+    }
+}
