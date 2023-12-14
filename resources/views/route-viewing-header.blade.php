@@ -1,6 +1,6 @@
 <script>
     var sessionId = "{{ \Illuminate\Support\Facades\Session::getId() }}";
-    var wsUrl = "{{ env('WS_APP_URL') }}";
+    var wsUrl = "{{ config('mr4lc-route-viewing.ws_url') }}";
     var wsConfig = "{{ $config ?? '0' }}";
 </script>
 <link rel="stylesheet" href="{{ asset('vendor/mr4-lc/route-viewing/css/mr4-lc-route-viewing.css') }}">
