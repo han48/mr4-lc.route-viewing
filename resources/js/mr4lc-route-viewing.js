@@ -25,6 +25,9 @@ window.onbeforeunload = function () {
 }
 
 function wsConnect() {
+    if (undefined === wsUrl || null === wsUrl || wsUrl.length === 0) {
+        return
+    }
     window.conn = new WebSocket(wsUrl)
     conn.onopen = function (e) {
         window.wsSendViewing()
